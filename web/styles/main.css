@@ -1,34 +1,80 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 5px 5px 5px 5px black;
-    height: auto;
-    width: 800px;
-    background-color: white;
-    border-color: black;
-    display: table-cell;
-    vertical-align: middle;
-}
-
 html {
-    heights: auto;
     display: table;
     margin: auto;
     background: url(../images/bats.gif);
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 5px 5px #666;
+    width: 800px;
+    background-color: white;
+    display: table-cell;
+    border-style: solid;
+    border-color: black;
+}
+
+header {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    background: orange; 
+    background: -webkit-linear-gradient(45deg, white , orange, black); 
+    background: -o-linear-gradient(45deg, white, orange, black); 
+    background: -moz-linear-gradient(45deg, while, orange, black); 
+    background: linear-gradient(45deg, white , orange, black); 
+}
+
+main {
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+footer {
+    border-style: solid;
+    border-width: 1px;
+    padding: 25px;
+    font-size: 80%;
+    text-align: center;
+    background: orange; 
+    background: -webkit-linear-gradient(45deg, black , orange, white); 
+    background: -o-linear-gradient(45deg, black, orange, white); 
+    background: -moz-linear-gradient(45deg, black, orange, white); 
+    background: linear-gradient(45deg, black , orange, white); 
+}
+
+img {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 4px;
+}
+
 h1 {
+    text-indent: 3%;
     font-size: 200%;
-    color: orange;
-    font-style: italic;
-    text-shadow: black;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 h2 {
-    font-size: 200%;
+    text-indent: 3%;
+    font-size: 175%;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 h3 {
+    font-size: 175%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h4 {
     font-size: 200%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h3::first-letter {
@@ -39,6 +85,8 @@ h3::first-letter {
 ul {
     line-height: 1.5;
     font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 a:visited, a:link {
@@ -49,11 +97,7 @@ a:hover, a:active {
     color: green;
 }
 
-header {
-    text-indent: 2%;
-}
-
-footer {
-    font-size: 80%;
-    text-align: center;
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
