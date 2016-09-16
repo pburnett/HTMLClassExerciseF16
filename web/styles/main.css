@@ -1,8 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 5px 5px black;
+    height: auto;
+    width: 800px;
+    background-color: white;
+    border-color: black;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+html {
+    heights: auto;
+    display: table;
+    margin: auto;
+    background: url(../images/bats.gif);
+}
+
 h1 {
     font-size: 200%;
     color: orange;
     font-style: italic;
-    text-shadow: 2px 2px black;
+    text-shadow: black;
 }
 
 h2 {
@@ -18,17 +36,12 @@ h3::first-letter {
     color: black;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 ul {
     line-height: 1.5;
     font-weight: bold;
-    color: orange;
 }
 
-a:visited {
+a:visited, a:link {
     color: orange;
 }
 
