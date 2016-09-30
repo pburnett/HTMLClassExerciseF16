@@ -29,6 +29,7 @@ aside {
 
 section {
   margin-left: 175px;
+  margin-bottom: 100px;
 }
 
 main {
@@ -64,24 +65,12 @@ h2 {
 }
 
 h3 {
-  font-size: 175%;
-  margin-bottom: 1px;
-  margin-top: 1px;
-}
-
-h4 {
   font-size: 150%;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  margin: 10px;
 }
 
-h3::first-letter {
-  color: black;
-  font-size: 200%;
-}
-
-p {
-  margin: 3px;
+section p {
+  margin: 10px;
 }
 
 .catLink:visited, .catLink:link {
@@ -103,6 +92,7 @@ p {
   margin-top: 5px;
   padding: 5px;
   width: 160px;
+
 }
 
 .sideBar li {

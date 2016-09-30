@@ -64,24 +64,30 @@ h2 {
 }
 
 h3 {
-  font-size: 175%;
-  margin-bottom: 1px;
-  margin-top: 1px;
-}
-
-h4 {
   font-size: 150%;
-  margin-bottom: 2px;
-  margin-top: 2px;
 }
 
-h3::first-letter {
-  color: black;
-  font-size: 200%;
+section input {
+  width: 65%;
+  margin-left: 25px;
 }
 
-p {
-  margin: 3px;
+section button {
+  background-color: orange;
+  border-color: black;
+  border-style: solid;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 109px;
+  margin-bottom: 5px;
+}
+
+#emailLabel {
+  padding-left: 35px;
+}
+
+#zipCodeLabel {
+  padding-left: 13px;
 }
 
 .catLink:visited, .catLink:link {
@@ -103,6 +109,7 @@ p {
   margin-top: 5px;
   padding: 5px;
   width: 160px;
+
 }
 
 .sideBar li {
