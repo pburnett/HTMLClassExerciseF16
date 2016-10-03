@@ -5,13 +5,22 @@
   <head>
     <meta charset="utf-8" />
     <title>Main Page</title>
-    <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/main_rwd.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#navMenu').slicknav({prependTo: "#mobileMenu"});
+      });
+    </script>
   </head>
 
   <body>
 
     <header>
-      <img class="pumpkin" src="images/pumpkin.gif" alt="" />
+      <img class="pumpkin" src="images/pumpkin.gif" alt="" width="85" height="75"/>
       <h1>
         The Halloween Store
       </h1>
@@ -21,14 +30,17 @@
     </header>
 
     <main>
-      <ul class="horizontalMenu">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="slides/products/index.html">Product List</a></li>
-        <li><a href="personal.asp">Personal</a></li>
-        <li><a href="decorating_ideas.asp">Decorating Ideas</a></li>
-        <li><a href="email.html">Join Email</a></li>
-      </ul>
-      
+      <nav id="mobileMenu"></nav>
+      <nav id="navMenu">
+        <ul class="horizontalMenu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="slides/products/index.html">Product List</a></li>
+          <li><a href="personal.asp">Personal</a></li>
+          <li><a href="decorating_ideas.asp">Decorating Ideas</a></li>
+          <li><a href="email.html">Join Email</a></li>
+        </ul>
+      </nav>
+
       <aside>
         <ul class="sideBar">
           <li><a href="slides/products/Props/Props.html" title="Props">Props</a></li>
@@ -54,13 +66,21 @@
         <h4>
           Product of the week
         </h4>
-        <a href="slides/products/Props/cat.html"><img src="slides/products/Props/cat1.jpg" alt=""/><br></a><a class="catLink" href="slides/products/Props/cat.html" title="20 Deranged Cat"><strong>20" Deranged Cat</strong></a>
-        <h4>
+        <a href="slides/products/Props/cat.html"><img class="catImage" src="slides/products/Props/cat1.jpg" alt=""/><br></a><a class="catLink" href="slides/products/Props/cat.html" title="20 Deranged Cat"><strong>20" Deranged Cat</strong></a>
+        <h4 id="guaranteeTitle">
           My guarantee
         </h4>
         <p>
           If you aren't completely satisfied with everything you buy from my site, you can return it for a full refund. <strong>No questions asked!</strong>
         </p>
+        
+        <ul class="sideBarCentered">
+          <li><a href="slides/products/Props/Props.html" title="Props">Props</a></li>
+          <li><a href="slides/products/Costumes/Costumes.html" title="Costumes">Costumes</a></li>
+          <li><a href="slides/products/Special_Effects/Special_Effects.html" title="Special_Effects">Special Effects</a></li>
+          <li><a href="slides/products/Masks/Masks.html" title="Masks">Masks</a></li>
+        </ul>
+
       </section>
 
     </main>
